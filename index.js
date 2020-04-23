@@ -113,7 +113,7 @@ var minimaxRoot =function(depth, game, isMaximisingPlayer) {
     return bestMoveFound;
 };
 
-//Function that implements Min-Max algorithm with Alpha-Beta purging that calculates the best move with the given depth.
+//Function that implements Min-Max algorithm with Alpha-Beta pruning that calculates the best move with the given depth.
 var minimax = function (depth, game, alpha, beta, isMaximisingPlayer) {
     if (depth === 0) {
         return -evaluateBoard(game.board());
